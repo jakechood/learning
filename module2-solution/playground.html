@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Playground</title>
+<style>
+
+/********** Base styles **********/
+*/ {
+    margin: 1rem;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+object {
+  border: 1px solid black;
+  margin: 1rem;
+}
+#o1 {
+  background-color: #A52A2A;
+  width: 300px;
+  height: 300px;
+}
+#o2 {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #o1 {
+    width: 80%;
+  }
+  #o2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #o1 {
+    width: 50%;
+  }
+  #o2 {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: blue;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>HTML/CSS/JS Playground</h1>
+
+<!-- Inline Objects -->
+<p> <object id="o1"></object><span></span><object id="o2"></object> 
+</p>
+</body>
+</html>

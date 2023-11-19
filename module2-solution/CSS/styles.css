@@ -1,0 +1,49 @@
+/********** Base styles **********/
+*/ {
+    margin: 1rem;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.col-lg-3 {
+    border: 2px solid black;
+    padding: 2px
+    background-color: beige;
+}
+.itemdescr {
+    border-style: border-box;
+  background-color: Beige;
+  width: 30%;
+  height: auto;
+}
+.itemtitle {
+    padding: 2px;
+    border-style: border-box;
+  background-color: red;
+  width: itemtitle.length;
+  height: auto;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #col-lg-3 {
+    width: 30%;
+    height: auto;
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #o1 {
+    width: 30%;
+  }
+  #o2 {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: blue;
+  }
+}
