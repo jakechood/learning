@@ -1,0 +1,239 @@
+/***** Master Variables *****/
+/* This section makes rebranding, visual updates,
+and color changes easier to occur without extensive 
+document parsing */
+
+:root {
+    /* Brand Colors */
+
+    /* Primary Brand Color */
+    --mainBrandColor: #8345C0;
+    /* Secondary Brand Color */
+    --secondBrandColor: #292A34;
+    /* Off-white */
+    --whiteBrandColor: #ebebeb;
+    /* Light Grey/Gray */
+    --lightBrandColor: #9A9FAA;
+    /* Aqua */
+    --accentBrandColor: #00B99A;
+
+    /* Important = Red */
+    --importantColor: #FF0014; 
+    /* Links = Light Purple */
+    --linkColor: #CBB5EC;
+}
+
+/**** Base Styles ****/
+/* These are the styles that 
+we'll be using the most */
+
+/* This bracket affects every element */
+*{
+    box-sizing: border-box;
+}
+/* First-Level Header */
+h1 {
+    margin-bottom: 15px;
+}
+/* TODO: Add header levels 2-4 */
+/* Fifth-level Header */
+h5 {
+    font-style: italic;
+    font-weight: 1600;
+    font-size: 30px;
+}
+/* Page header section */
+header {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    color: var(--whiteBrandColor);
+    background-color: var(--mainBrandColor);
+}
+/* Page Navigation Bar */
+nav {
+    text-transform: uppercase;
+}   
+/* What things should look like when they're selected on the page */
+select {
+    background-color: var(--secondBrandColor);
+    color: var(--whiteBrandColor);
+    font-size: 16px;
+    outline-color: var(--mainBrandColor);
+    scrollbar-highlight-color: var(--mainBrandColor);
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* Class for sections whose colors should align with the primary color palette */
+#mainBodyColor {
+    background-color: var(--mainBrandColor);
+    color: var(--whiteBrandColor);
+}
+/* Class for sections whose background should be align with the secondary color palette */
+#secondBodyColor {
+    background-color: var(--secondBrandColor);
+    color: var(--whiteBrandColor);
+}
+.b2 {
+    background-color: var(--secondBrandColor);
+    width: 100%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: var(--whiteBrandColor);
+}
+/* Links should look like */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--linkColor);
+}
+/* Primary paragraphs should look like */
+#p1 {
+    background-color: var(--mainBrandColor);
+    width: 100%;
+    height: 150px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-family: Helvetica;
+    color: var(--secondBrandColor);
+}
+
+/* Responsive Framework */
+.row {
+    width: 100%;
+}
+
+/* Large Devices Only */
+@media (min-width: 1200px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: center;
+        border: 1pst solid var(--mainBrandColor);
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+} 
+
+/* Medium Devices Only */
+@media (min-width: 950px) and (max-width: 1199px)    {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+        border: 1pst solid var(--secondBrandColor);
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* Small Devices Only */
+@media (max-width: 941px)    {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: center;
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 74.99%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title id="title">Paradigm Pet Professionals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav id="siteNav">
+                <!-- B.3 Unordered List is here -->
+                <ul>
+                    <rectangle id="coloradoLi" class="navLi" href="index.html">
+                        <li><a id="colorado" id="navLiA" href="index.html">Colorado</a></li>
+                    </rectangle>
+                    <rectangle id="denverLi" class="navLi" href="denver.html">
+                        <li><a id="denver" id="navLiA" href="denver.html">Denver</a></li>
+                        </rectangle>
+                    <rectangle id="auroraLi" class="navLi" href="aurora.html">    
+                        <li><a id="aurora" id="navLiA" href="aurora.html">Aurora</a></li>
+                        </rectangle>
+                    <rectangle id="cSpringsLi" class="navLi" href="coloradosprings.html">
+                        <li><a id="cSprings" id="navLiA" href="coloradosprings.html">Colorado&#xa0;Springs</a></li>
+                        </rectangle>
+                    <rectangle id="puebloLi" class="navLi" href="pueblo.html">
+                        <li><a id="pueblo" id="navLiA" href="pueblo.html">Pueblo</a></li>
+                        </rectangle>
+                </ul>
+            </nav>
+            <br>
+            <img class="stateCrest" 
+                src="images/coloradoSeal.jpeg" 
+                width="18%" 
+                cite="cite.html#coloradoSeal"
+                alt="State Crest of Colorado: A red circle lined with ornamental rope and beading
+                is filled with a solid blue color with the words 'nil sine numine', a shield
+                with crossed hammer and pickaxe below snow-capped mountains, and the all-seeing
+                eye atop a ceremonial axe with its blade pointed upward">
+
+            <div id="flagTitle">
+                <img id="stateFlag" 
+                    src="images/colorado-flag.jpeg"
+                    cite="cite.html#brittanica"
+                    alt="State Flag of Colorado: a Red letter 'c' with a gold interior atop three
+                    horizontal stripes, two navy and one white">
+                <span id="docTitle"></span>
+            </div>
+        </header>
+        <section>
+            <container id="docHeading">
+                <br>
+                <br>
+                <h1>The Centennial State</h1>
+                <population cite="brittanica">Population: 5,877,610 &#x28;est.&#x29;</population>
+                <p>Colorado is located in the <cite id="nwEncyc" href="cite.html#nwEncyc">Rocky Mountain region of continental United States (New World Encyclopedia)</cite> and is largely composed of mountains and plateaus. Farmers populate a significant portion of this picturesque state's area, while urbanites can find more dense living in Denver and suburban-preferring populous could find a personal oasis in Colorado Springs or Aurora.
+                    </p>
+            </container>
+
+            <aside>
+                <h2>State Capitol: Denver</h2>
+                <p>Populated with <cite cite="census" href="cite.html#census">713,252</cite>, the Capitol of Colorado sits within eyeshot of the mountains to the west, with plains to the East.
+                </p>
+            </aside>
+
+            <h3>Colorado Information</h3>
+            <p>
+                Colorado was incorporated on 1 August 1876 <cite id="libCON" href="cite.html#libCON">"after its first bid for statehood was vetoed by President Andrew Jackson" (Library of Congress)</cite>. 
+            </p>
+                <br>
+
+            <!-- B.4 HTML-coded table min. 3x3 is here -->
+            <table cite="census censusCO censusAurora censusCSprings censusPlace" href="cite.html#census">
+                <tr>
+                    <th>Location</th>
+                    <th>Region</th>
+                    <th>Classification</th>
+                    <th>Population</th>
+                    <th>Median Income</th>
+                </tr>
+                <tr>
+                    <th class="tableCity">Denver</th>
+                    <td>Region 1: North-Northeastern CO</td>
+                    <td>Urban</td>
+                    <td>713,252</td>
+                    <td>$78,177-$90,716</td>
+                </tr>
+                <tr>
+                    <th class="tableCity">Colorado Springs</th>
+                    <td>Region 2: Southeast CO</td>
+                    <td>Urban</td>
+                    <td>486,248</td>
+                    <td>$79,026</td>
+                </tr>
+                <tr>
+                    <th class="tableCity">Aurora</th>
+                    <td>Region 1: North-Northeastern CO</td>
+                    <td>Eastern Suburb of Denver</td>
+                    <td>393,537</td>
+                    <td>$78,685</td>
+                </tr>
+                <tr>
+                    <th class="tableCity">Pueblo</th>
+                    <td>Region 2: Southeast CO</td>
+                    <td>Urban</td>
+                    <td>111,456</td>
+                    <td>$52,794</td>
+                </tr>
+                <caption cite="census" href="cite.html#census">
+                    Figure 1: Colorado State and Urban Census Data, 2022 
+                    <br>
+                    *Table data was collected from census.gov between 10-13 March 2024. Dollars are in USD as of 2022 value.
+                </caption>
+            </table>
+                <br>
+                <br>
+                <br>
+            <div>
+                <!-- B.2 Ordered list with at least three items is here -->
+                <ol>
+                    <label>Colorado Cities by Population</label>
+                    <li>Denver (713,252)</li>
+                    <li>Colorado Springs (486,248)</li>
+                    <li>Aurora (393,537)</li>
+                    <li>Pueblo (111,456)</li>
+                </ol>
+            </div>
+                <br>
+            <!-- D. Add a form on one page of yoru website is here -->
+            <form id="pageForm" enctype="multipart/form-data" method="post">
+
+                <label for="fName">First Name</label>
+                    <input type="text" placeholder="John" name="fName" id="fName" value="John">
+                    <br>
+                <label for="lName">Last Name</label>
+                    <input type="text" placeholder="Doe" name="lName" id="lName" value="Doe">
+                    <br>
+                <label for="emailIn">Email Address</label>
+                    <input type="email" placeholder="Johndoe@domain.com" name="emailIn" id="emailIn">
+                    <br>
+                <label for="confEmail">Confirm Email</label>
+                    <input type="email" placeholder="Johndoe@domain.com" name="confEmail" id="confEmail">                
+                    <br>
+                    <span id="emailError" class="hidden">Emails must match</span>
+                    <br>
+                <label for="question">Questions, if applicable</label>
+                <br>
+                <textarea initial-scale="1.0" cols="40" rows="10" placeholder="I was wondering about..." name="question" id="question" value="I was wondering about..."></textarea>
+                
+                <input type="submit" value="Submit" id="Submit" placeholder="Submit">
+            </form>
+        </section>
+        <footer>
+            <!-- Link to all page including all linked/cited APA7 citations is here -->
+            Please feel welcome to view all references and citations at <a href="cite.html">this link</a> or by inspecting object properties throughout the page.
+            <br>
+            <!-- B.1 Link to external site is here and opens in a new tab -->
+            <a href="phantasmagoriadesigns.com" id="phantDes" target="_blank">&#xa9; Phantasmagoria Designs, LLC</a>
+            <br> 
+            Website &#xa9; Jake Sturgill Hood, 2024
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
