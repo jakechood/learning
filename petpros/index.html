@@ -1,131 +1,88 @@
+<!-- Document type declaration -->
 <!DOCTYPE html>
+<!-- Begin document content -->
 <html>
     <head>
+        <!-- Character set used for document -->
         <meta charset="UTF-8">
+        <!-- Responsive viewport width and scale -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Tab Title Here -->
         <title id="title">Paradigm Pet Professionals</title>
+        <!-- Load the custom stylesheet -->
         <link rel="stylesheet" href="styles.css">
+        <!-- Load the content layout framework -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <nav id="siteNav">
-                <!-- B.3 Unordered List is here -->
-                <ul>
-                    <rectangle id="coloradoLi" class="navLi" href="index.html">
-                        <li><a id="colorado" id="navLiA" href="index.html">Colorado</a></li>
-                    </rectangle>
-                    <rectangle id="denverLi" class="navLi" href="denver.html">
-                        <li><a id="denver" id="navLiA" href="denver.html">Denver</a></li>
-                        </rectangle>
-                    <rectangle id="auroraLi" class="navLi" href="aurora.html">    
-                        <li><a id="aurora" id="navLiA" href="aurora.html">Aurora</a></li>
-                        </rectangle>
-                    <rectangle id="cSpringsLi" class="navLi" href="coloradosprings.html">
-                        <li><a id="cSprings" id="navLiA" href="coloradosprings.html">Colorado&#xa0;Springs</a></li>
-                        </rectangle>
-                    <rectangle id="puebloLi" class="navLi" href="pueblo.html">
-                        <li><a id="pueblo" id="navLiA" href="pueblo.html">Pueblo</a></li>
-                        </rectangle>
-                </ul>
-            </nav>
-            <br>
-            <img class="stateCrest" 
-                src="images/coloradoSeal.jpeg" 
-                width="18%" 
-                cite="cite.html#coloradoSeal"
-                alt="State Crest of Colorado: A red circle lined with ornamental rope and beading
-                is filled with a solid blue color with the words 'nil sine numine', a shield
-                with crossed hammer and pickaxe below snow-capped mountains, and the all-seeing
-                eye atop a ceremonial axe with its blade pointed upward">
-
-            <div id="flagTitle">
-                <img id="stateFlag" 
-                    src="images/colorado-flag.jpeg"
-                    cite="cite.html#brittanica"
-                    alt="State Flag of Colorado: a Red letter 'c' with a gold interior atop three
-                    horizontal stripes, two navy and one white">
-                <span id="docTitle"></span>
-            </div>
+        <!-- Page Header -->
+        <header class="headerColor w3-padding">
+            <img class="logo w3-bar-item headerItem" 
+                src="images/PPPLogo.png" 
+                width="18%"
+                cite="cite.html#PPP"
+                alt="Paradigm Pet Professionals Logo: A vector splash image of a nondescript four-legged animal surrounded by a circular paintbrush stroke">
+            <company class="w3-bar-item headerItem headerItemL">Paradigm&nbsp;Pet&nbsp;Professionals</company>
+            <!-- Call to action button -->
+            <button class="w3-bar-item headerItem headerItemInner" type="button" href="#pageForm">Contact&nbsp;Us</button>
+            <!-- Searchbar -->
+            <input id="search" class="w3-bar-item headerItem headerItemInner" type="text" placeholder="Search">
+            <button class="w3-bar-item headerItem headerItemR" id="navButton" class="siteNav" type="button" for="siteNav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                <div id="myLinks" class="topnav">
+                    <nav id="siteNav">
+                    
+                        <a id="homePage" class="navA" href="/index.html">Home</a>
+                        <br>
+                        <a id="dogOwners" class="navA" href="/dog-owners.html">Dog&nbsp;Owners</a>
+                        <br>
+                        <a id="catOwners" class="navA" href="/cat-owners.html">Cat&nbsp;Owners</a>
+                        <br>
+                        <a id="fishOwners" class="navA" href="/fish-owners.html">Fish&nbsp;Owners</a>
+                        <br>
+                        <a id="loginNav" class="navA" href="/login.html">Login</a>                       
+                    </nav>
+                </div>
+            </button>
         </header>
-        <section>
-            <container id="docHeading">
-                <br>
-                <br>
-                <h1>The Centennial State</h1>
-                <population cite="brittanica">Population: 5,877,610 &#x28;est.&#x29;</population>
-                <p>Colorado is located in the <cite id="nwEncyc" href="cite.html#nwEncyc">Rocky Mountain region of continental United States (New World Encyclopedia)</cite> and is largely composed of mountains and plateaus. Farmers populate a significant portion of this picturesque state's area, while urbanites can find more dense living in Denver and suburban-preferring populous could find a personal oasis in Colorado Springs or Aurora.
-                    </p>
-            </container>
-
-            <aside>
-                <h2>State Capitol: Denver</h2>
-                <p>Populated with <cite cite="census" href="cite.html#census">713,252</cite>, the Capitol of Colorado sits within eyeshot of the mountains to the west, with plains to the East.
-                </p>
-            </aside>
-
-            <h3>Colorado Information</h3>
-            <p>
-                Colorado was incorporated on 1 August 1876 <cite id="libCON" href="cite.html#libCON">"after its first bid for statehood was vetoed by President Andrew Jackson" (Library of Congress)</cite>. 
-            </p>
-                <br>
-
-            <!-- B.4 HTML-coded table min. 3x3 is here -->
-            <table cite="census censusCO censusAurora censusCSprings censusPlace" href="cite.html#census">
-                <tr>
-                    <th>Location</th>
-                    <th>Region</th>
-                    <th>Classification</th>
-                    <th>Population</th>
-                    <th>Median Income</th>
-                </tr>
-                <tr>
-                    <th class="tableCity">Denver</th>
-                    <td>Region 1: North-Northeastern CO</td>
-                    <td>Urban</td>
-                    <td>713,252</td>
-                    <td>$78,177-$90,716</td>
-                </tr>
-                <tr>
-                    <th class="tableCity">Colorado Springs</th>
-                    <td>Region 2: Southeast CO</td>
-                    <td>Urban</td>
-                    <td>486,248</td>
-                    <td>$79,026</td>
-                </tr>
-                <tr>
-                    <th class="tableCity">Aurora</th>
-                    <td>Region 1: North-Northeastern CO</td>
-                    <td>Eastern Suburb of Denver</td>
-                    <td>393,537</td>
-                    <td>$78,685</td>
-                </tr>
-                <tr>
-                    <th class="tableCity">Pueblo</th>
-                    <td>Region 2: Southeast CO</td>
-                    <td>Urban</td>
-                    <td>111,456</td>
-                    <td>$52,794</td>
-                </tr>
-                <caption cite="census" href="cite.html#census">
-                    Figure 1: Colorado State and Urban Census Data, 2022 
-                    <br>
-                    *Table data was collected from census.gov between 10-13 March 2024. Dollars are in USD as of 2022 value.
-                </caption>
-            </table>
-                <br>
-                <br>
-                <br>
-            <div>
-                <!-- B.2 Ordered list with at least three items is here -->
-                <ol>
-                    <label>Colorado Cities by Population</label>
-                    <li>Denver (713,252)</li>
-                    <li>Colorado Springs (486,248)</li>
-                    <li>Aurora (393,537)</li>
-                    <li>Pueblo (111,456)</li>
-                </ol>
+        <div class="w3-display-container w3-content">
+        <section class="secondBodyColor w3-row w3-padding-64">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="images/consultation.jpg"
+                id="consultationPhoto"
+                class=""
+                alt="Stock image of professionals sitting on a bench amongst greenery">
             </div>
-                <br>
-            <!-- D. Add a form on one page of yoru website is here -->
+            <div class="w3-col m6 w3-padding-large">
+                <aside id="mainAside" class="">
+                    <h1 class="w3-center">Expert Pet Ownership Consultations</h1>
+                    <p class="w3-center">Pets are nature's gift to humanity&period; It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets&period; At Pet Paradigm Professionals&#x2c; our mission is to offer resources to help you care for your furry&#x2c; scaly&#x2c; feathery&#x2c; and slimy loved ones&period; Our pet experts&ndash;or &quot;Pexperts&quot;&ndash;have been working with pet owners and professionals alike for the past twelve years&period; They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary&#x2c; pet shelter&#x2c; and pet breeding professionals&period;</p>
+                </aside>
+            </div>
+        </section>
+        <section class="thirdBodyColor">
+            <br>
+            <br>
+            <h1>Paradigm&nbsp;Pet&nbsp;Professionals</h1>
+            <h2>Evidence&ndash;based pet care advice for every pet lover</h2>
+            <p>Paradigm Pet Professionals has 12 years&rsquo; experience working with pet owners &amp; certifications in pet health and nutrition&#x2c; and customer recognition for outstanding support.</p>
+        
+            <label for="servicesOffered">Services&nbsp;Offered</label>
+            <ul id="servicesOffered">
+                <li>Virtual&nbsp;Consultations and Presentations</li>
+                <li>One&ndash;on&ndash;One&nbsp;Consultations concerning individual pets</li>
+                <li>Group&nbsp;presentations regarding general pet care</li>
+            </ul>
+        </section>
+        <section class="secondBodyColor">
+            <p>Looking for basic pet care advice for the most common type of pets&#x3f; Need additional help determining which type of pet is right for you and your family&#x3f; We will work with you and provide tailored evidence&ndash;based pet care to ensure lifelong health and wellness of your new companion. </p>
+        
+            <!-- Consultation Form is Here -->
             <form id="pageForm" enctype="multipart/form-data" method="post">
 
                 <label for="fName">First Name</label>
@@ -149,7 +106,7 @@
                 <input type="submit" value="Submit" id="Submit" placeholder="Submit">
             </form>
         </section>
-        <footer>
+        <footer class="footerColor">
             <!-- Link to all page including all linked/cited APA7 citations is here -->
             Please feel welcome to view all references and citations at <a href="cite.html">this link</a> or by inspecting object properties throughout the page.
             <br>
@@ -157,7 +114,10 @@
             <a href="phantasmagoriadesigns.com" id="phantDes" target="_blank">&#xa9; Phantasmagoria Designs, LLC</a>
             <br> 
             Website &#xa9; Jake Sturgill Hood, 2024
+            <img id="pPP" src="images/PPP.png" class="">
         </footer>
+        <!-- Perform the following javascript code -->
         <script src="script.js"></script>
     </body>
+    <!-- End document content -->
 </html>

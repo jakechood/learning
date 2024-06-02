@@ -6,34 +6,38 @@ document parsing */
 :root {
     /* Brand Colors */
 
-    /* Primary Brand Color */
-    --mainBrandColor: #8345C0;
-    /* Secondary Brand Color */
-    --secondBrandColor: #292A34;
-    /* Off-white */
-    --whiteBrandColor: #ebebeb;
-    /* Light Grey/Gray */
-    --lightBrandColor: #9A9FAA;
-    /* Aqua */
-    --accentBrandColor: #00B99A;
+    /* Primary Brand Color: Midnight Blue */
+    --mainBrandColor: #003B6D;
+    /* Secondary Brand Color: Dim Gray */
+    --secondBrandColor: #676767;
+    /* Silver */
+    --whiteBrandColor: #BDBDBD;
+    /* Blue Sky */
+    --lightBrandColor: #6699CC;
+
+    /* Aqua
+    --accentBrandColor: #00B99A; */
 
     /* Important = Red */
     --importantColor: #FF0014; 
     /* Links = Light Purple */
-    --linkColor: #CBB5EC;
+    --linkColor: #FFFFFF;
 }
 
 /**** Base Styles ****/
 /* These are the styles that 
 we'll be using the most */
-
+/* All sections should hide overflow */
+section {
+    overflow: hidden;
+}
 /* This bracket affects every element */
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 /* First-Level Header */
 h1 {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 /* TODO: Add header levels 2-4 */
 /* Fifth-level Header */
@@ -45,16 +49,12 @@ h5 {
 /* Page header section */
 header {
     font-family: 'Montserrat', sans-serif;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: .5rem;
     color: var(--whiteBrandColor);
     background-color: var(--mainBrandColor);
 }
 /* Page Navigation Bar */
-nav {
-    text-transform: uppercase;
+nav a{
+    color: var(--whiteBrandColor)
 }   
 /* What things should look like when they're selected on the page */
 select {
@@ -66,24 +66,61 @@ select {
     user-select: none;
     -webkit-user-select: none;
 }
+.logo {
+    max-width: 7%;
+}
+/* .floatRight {
+    display: inline;
+    float: right;
+}
+.floatLeft {
+    display: inline;
+    float: left;
+} */
+/* #consultationPhoto {
+    width: 30%;
+    float: center;
+    margin: 5rem;
+} */
+/* #mainAside {
+    margin-top: 12%;
+    margin-right: 10%;
+}
+#pPP {
+    float: right;
+} */
+#navButton{
+    background-color: var(--mainBrandColor);
+    border: none;
+}
+/* Header Company Title */
+company {
+    font-size: xx-large;
+    padding-left: -2rem;
+}
+/* Searchbar */
+#search {
+    background-color: var(--secondBrandColor);
+    border-radius: 5px;
+}
 /* Class for sections whose colors should align with the primary color palette */
-#mainBodyColor {
+.headerColor {
     background-color: var(--mainBrandColor);
     color: var(--whiteBrandColor);
 }
 /* Class for sections whose background should be align with the secondary color palette */
-#secondBodyColor {
-    background-color: var(--secondBrandColor);
-    color: var(--whiteBrandColor);
+.secondBodyColor {
+    background-color: var(--whiteBrandColor);
+    color: var(--mainBrandColor);
 }
-.b2 {
+.thirdBodyColor {
+    background-color: var(--lightBrandColor);
+    color: black;
+}
+.footerColor {
+    overflow: hidden;
     background-color: var(--secondBrandColor);
-    width: 100%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Helvetica;
-    color: var(--whiteBrandColor);
+    color: white;
 }
 /* Links should look like */
 a {
@@ -91,6 +128,80 @@ a {
     font-weight: bold;
     color: var(--linkColor);
 }
+/* Navigation menu popover */
+#myLinks:popover-open {
+    background-color: var(--mainBrandColor);
+    width: 100%;
+    height: 65%;
+    border-top: 5rem solid var(--secondBrandColor);
+    border-bottom: 5rem solid var(--secondBrandColor);
+}
+/* Navigation button */
+siteNav {
+    background-color: var(--mainBrandColor);
+}
+/* Navigation Menu "hamburger" icon */
+.icon{
+    color: var(--whiteBrandColor);
+    font-size: 2rem;
+    /* Maintain size & usability for mobile devices */
+    min-width: 34px;
+}
+/* Header item spacing */
+.headerItem {
+    padding: 1rem;
+}
+.headerItemL {
+    margin-right: 5%; 
+    align: left;
+}
+.headerItemInner {
+    margin-left: 5%;
+    margin-right: 5%;
+    float: center;
+}
+.headerItemR {
+    margin-left: 5%;
+    float: right;
+    margin-top: 1%;
+}
+/* Borrowed nav template here from w3schools.org */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--whiteBrandColor);
+    color: white;
+  }
+  /* End borrowed template */
 /* Primary paragraphs should look like */
 #p1 {
     background-color: var(--mainBrandColor);
@@ -102,7 +213,7 @@ a {
     color: var(--secondBrandColor);
 }
 
-/* Responsive Framework */
+/* Responsive Framework addendum */
 .row {
     width: 100%;
 }
