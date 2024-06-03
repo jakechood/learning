@@ -101,6 +101,10 @@ select {
     background-color: var(--mainBrandColor);
     border: none;
 }
+#dogsPhoto {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 /* Header Company Title */
 company {
     font-size: xx-large;
