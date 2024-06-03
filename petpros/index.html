@@ -50,8 +50,8 @@
                 </div>
             </button>
         </header>
-        <div class="w3-display-container w3-content">
-        <section class="secondBodyColor w3-row w3-padding-64">
+        <div class="w3-display-container">
+        <section class="secondBodyColor">
             <div class="w3-col m6 w3-padding-large w3-hide-small">
                 <img src="images/consultation.jpg"
                 id="consultationPhoto"
@@ -59,62 +59,129 @@
                 alt="Stock image of professionals sitting on a bench amongst greenery">
             </div>
             <div class="w3-col m6 w3-padding-large">
-                <aside id="mainAside" class="">
+                <aside id="mainAside" class="w3-content">
                     <h1 class="w3-center">Expert Pet Ownership Consultations</h1>
                     <p class="w3-center">Pets are nature's gift to humanity&period; It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets&period; At Pet Paradigm Professionals&#x2c; our mission is to offer resources to help you care for your furry&#x2c; scaly&#x2c; feathery&#x2c; and slimy loved ones&period; Our pet experts&ndash;or &quot;Pexperts&quot;&ndash;have been working with pet owners and professionals alike for the past twelve years&period; They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary&#x2c; pet shelter&#x2c; and pet breeding professionals&period;</p>
                 </aside>
             </div>
         </section>
-        <section class="thirdBodyColor">
-            <br>
-            <br>
-            <h1>Paradigm&nbsp;Pet&nbsp;Professionals</h1>
-            <h2>Evidence&ndash;based pet care advice for every pet lover</h2>
-            <p>Paradigm Pet Professionals has 12 years&rsquo; experience working with pet owners &amp; certifications in pet health and nutrition&#x2c; and customer recognition for outstanding support.</p>
-        
-            <label for="servicesOffered">Services&nbsp;Offered</label>
-            <ul id="servicesOffered">
-                <li>Virtual&nbsp;Consultations and Presentations</li>
-                <li>One&ndash;on&ndash;One&nbsp;Consultations concerning individual pets</li>
-                <li>Group&nbsp;presentations regarding general pet care</li>
-            </ul>
-        </section>
-        <section class="secondBodyColor">
-            <p>Looking for basic pet care advice for the most common type of pets&#x3f; Need additional help determining which type of pet is right for you and your family&#x3f; We will work with you and provide tailored evidence&ndash;based pet care to ensure lifelong health and wellness of your new companion. </p>
-        
-            <!-- Consultation Form is Here -->
-            <form id="pageForm" enctype="multipart/form-data" method="post">
-
-                <label for="fName">First Name</label>
-                    <input type="text" placeholder="John" name="fName" id="fName" value="John">
-                    <br>
-                <label for="lName">Last Name</label>
-                    <input type="text" placeholder="Doe" name="lName" id="lName" value="Doe">
-                    <br>
-                <label for="emailIn">Email Address</label>
-                    <input type="email" placeholder="Johndoe@domain.com" name="emailIn" id="emailIn">
-                    <br>
-                <label for="confEmail">Confirm Email</label>
-                    <input type="email" placeholder="Johndoe@domain.com" name="confEmail" id="confEmail">                
-                    <br>
-                    <span id="emailError" class="hidden">Emails must match</span>
-                    <br>
-                <label for="question">Questions, if applicable</label>
+        <div>
+            <section class="thirdBodyColor">
                 <br>
-                <textarea initial-scale="1.0" cols="40" rows="10" placeholder="I was wondering about..." name="question" id="question" value="I was wondering about..."></textarea>
-                
-                <input type="submit" value="Submit" id="Submit" placeholder="Submit">
-            </form>
-        </section>
-        <footer class="footerColor">
-            <!-- Link to all page including all linked/cited APA7 citations is here -->
+                <br>
+                <h1 class="w3-center">Paradigm&nbsp;Pet&nbsp;Professionals</h1>
+                <h2 class="w3-center">Evidence&ndash;based pet care advice for every pet lover</h2>
+                <p class="w3-center">Paradigm Pet Professionals has 12 years&rsquo; experience working with pet owners &amp; certifications in pet health and nutrition&#x2c; and customer recognition for outstanding support.</p>
+
+                <ul id="servicesOffered" class="w3-center">
+                    <h3 class="w3-center">Services&nbsp;Offered</h3>
+                    <li>Virtual&nbsp;Consultations and Presentations</li>
+                    <li>One&ndash;on&ndash;One&nbsp;Consultations concerning individual pets</li>
+                    <li>Group&nbsp;presentations regarding general pet care</li>
+                </ul>
+            </section>
+            <section class="secondBodyColor">
+                <p>Looking for basic pet care advice for the most common type of pets&#x3f; Need additional help determining which type of pet is right for you and your family&#x3f; We will work with you and provide tailored evidence&ndash;based pet care to ensure lifelong health and wellness of your new companion. </p>
+            
+                <!-- Consultation Form is Here -->
+                <form id="pageForm" enctype="multipart/form-data" method="post">
+
+                    <label for="fName">First Name</label>
+                        <input type="text" placeholder="John" name="fName" id="fName" class="w3-input">
+                        <br>
+                    <label for="lName">Last Name</label>
+                        <input type="text" placeholder="Doe" name="lName" id="lName" class="w3-input">
+                        <br>
+                    <label for="number">Phone&nbsp;Number</label>
+                    <input type="phone" placeholder="123-456-7890" name="number" id="number" class="w3-input">
+                    <br>
+                    <label for="emailIn">Email Address</label>
+                        <input type="email" placeholder="Johndoe@domain.com" name="emailIn" id="emailIn" class="w3-input">
+                        <br>
+                    <label for="confEmail">Confirm Email</label>
+                        <input type="email" placeholder="Johndoe@domain.com" name="confEmail" id="confEmail" class="w3-input">                
+                        <br>
+                        <span id="emailError" class="hidden">Emails must match</span>
+                    <label for="petName">Pet Name</label>
+                        <input type="text" placeholder="Fido" name="petName" id="petName" class="w3-input">
+                    <br>
+                    <label for="petType">Pet&nbsp;Type&#x2f;Species</label>
+                        <input type="text" placeholder="Dog" name="petType" id="petType" class="w3-input">
+                    <br>
+                    <label for="petAge">Pet&nbsp;Age</label>
+                        <input type="text" placeholder="2 months" name="petAge" id="petAge" class="w3-input">
+                    <br>
+                    <label for="timezone_offset">Select&nbsp;Time&nbsp;Zone</label>
+                        <select name="timezone_offset" id="timezone-offset" class="w3-input">
+                            <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                            <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                            <option value="-10:00">(GMT -10:00) Hawaii</option>
+                            <option value="-09:50">(GMT -9:30) Taiohae</option>
+                            <option value="-09:00">(GMT -9:00) Alaska</option>
+                            <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                            <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                            <option value="-06:00" selected="selected">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                            <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                            <option value="-04:50">(GMT -4:30) Caracas</option>
+                            <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                            <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                            <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                            <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                            <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                            <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                            <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                            <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                            <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                            <option value="+03:50">(GMT +3:30) Tehran</option>
+                            <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                            <option value="+04:50">(GMT +4:30) Kabul</option>
+                            <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                            <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                            <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                            <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                            <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                            <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                            <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                            <option value="+08:75">(GMT +8:45) Eucla</option>
+                            <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                            <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                            <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                            <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                            <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                            <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                            <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                            <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                            <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                            <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                        </select>
+                    <input type="submit" value="Submit" id="Submit" placeholder="Submit" class="w3-button">
+                </form>
+            </section>
+        </div>
+        <footer>
+            <ul class="thirdWidth">
+                <br>
+                <li><a href="sitemap.xml">Site&nbsp;Map</a></li>
+                <li><a href="cite.html">Citations</a></li>
+                <li><a href="cookie-policy.html">Cookie&nbsp;Policy</a></li>
+            </ul>
+            <ul class="thirdWidth">
+                <br>
+                <li><a href="cat-owners.html">Cat&nbsp;Owners</a></li>
+                <li><a href="dog-owners.html">Dog&nbsp;Owners</a></li>
+                <li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+
+            </ul>
+            <!-- <div>
+            <!-- Link to all page including all linked/cited APA7 citations is here
             Please feel welcome to view all references and citations at <a href="cite.html">this link</a> or by inspecting object properties throughout the page.
             <br>
-            <!-- B.1 Link to external site is here and opens in a new tab -->
+            <!-- B.1 Link to external site is here and opens in a new tab
             <a href="phantasmagoriadesigns.com" id="phantDes" target="_blank">&#xa9; Phantasmagoria Designs, LLC</a>
             <br> 
             Website &#xa9; Jake Sturgill Hood, 2024
-            <img id="pPP" src="images/PPP.png" class="">
+            </div> -->
+            <img id="pPP" src="images/PPP.png" class="footerContent">
         </footer>
         <!-- Perform the following javascript code -->
         <script src="script.js"></script>
