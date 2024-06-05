@@ -102,8 +102,10 @@ select {
     border: none;
 }
 #dogsPhoto {
+    display: flex;
     margin-left: 2rem;
-    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 /* Header Company Title */
 company {
@@ -193,6 +195,14 @@ siteNav {
     float: right;
     padding-top: 2%;
     position: relative;
+}
+#scheduleButton {
+    align-items: center;
+    justify-self: center;
+}
+.cTAButton {
+    align-items: center;
+    justify-self: center;
 }
 /* Borrowed nav template here from w3schools.org */
 /* Style the navigation menu */
