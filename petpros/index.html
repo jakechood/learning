@@ -87,8 +87,9 @@
                 <p>Looking for basic pet care advice for the most common type of pets&#x3f; Need additional help determining which type of pet is right for you and your family&#x3f; We will work with you and provide tailored evidence&ndash;based pet care to ensure lifelong health and wellness of your new companion. </p>
             
                 <!-- Consultation Form is Here -->
-                <form id="pageForm" enctype="multipart/form-data" method="post">
-
+                <form id="pageForm">
+                <div class="pageForm" enctype="multipart/form-data" method="post">
+                
                     <label for="fName">First Name</label>
                         <input type="text" placeholder="John" name="fName" id="fName" class="w3-input" required>
                         <br>
@@ -108,12 +109,17 @@
                     
                     <div class="buttonBox">
                         <progress max="2" value="1">Part&nbsp;1&nbsp;of&nbsp;2</progress>
-                        <button id="nextButton" type="button">Next</button>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            </div>
+                          </div>
                     </div>
                     <div>Next:&nbsp;Pet&nbsp;and&nbsp;Time&nbsp;Zone&nbsp;Info</div>
                     <br>
-                </form>
-                <form id="pageForm2" enctype="multipart/form-data" method="post">
+                </div>
+                <div class="pageForm" id="pageForm2" enctype="multipart/form-data" method="post" style="display: none;">
                     <label for="petName">Pet Name</label>
                         <input type="text" placeholder="Fido" name="petName" id="petName" class="w3-input" required>
                     <br>
@@ -169,10 +175,15 @@
                         
                     <div class="buttonBox">
                         <progress max="2" value="2">Part&nbsp;2&nbsp;of&nbsp;2</progress>
-                        <button id="backButton" type="button">Back</button>
-                        <input type="submit" value="Submit" id="Submit" placeholder="Submit" class="w3-button">
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            </div>
+                          </div>
                     </div>
-                </form>
+                    </div>
+                    </form>
             </section>
             <section class="thirdBodyColor">
                 <br>

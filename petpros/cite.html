@@ -1,3 +1,157 @@
-https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+<!-- Document type declaration -->
+<!DOCTYPE html>
+<!-- Begin document content -->
+<html>
+    <head>
+        <!-- Character set used for document -->
+        <meta charset="UTF-8">
+        <!-- Responsive viewport width and scale -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Tab Title Here -->
+        <title id="title">Paradigm Pet Professionals</title>
+        <!-- Load the custom stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Load the content layout framework -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Page Header -->
+        <header class="headerColor w3-padding">
+            <img class="logo w3-bar-item headerItem" 
+                src="images/PPPLogo.png" 
+                width="18%"
+                cite="cite.html#PPP"
+                href="index.html"
+                alt="Paradigm Pet Professionals Logo: A vector splash image of a nondescript four-legged animal surrounded by a circular paintbrush stroke">
+            <company class="w3-bar-item headerItem headerItemL" href="index.html">Paradigm&nbsp;Pet&nbsp;Professionals</company>
+            <!-- Call to action button -->
+            <button class="w3-bar-item headerItem headerItemInner cTAButton" type="button" href="#pageForm">Contact&nbsp;Us</button>
+            <!-- Searchbar -->
+            <input id="search" class="w3-bar-item headerItem headerItemInner" type="text" placeholder="Search">
+            <button class="w3-bar-item headerItem headerItemR" id="navButton" class="siteNav" type="button" for="siteNav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                <div id="myLinks" class="topnav">
+                    <nav id="siteNav">
+                    
+                        <a id="homePage" class="navA" href="index.html">Home</a>
+                        <br>
+                        <a id="dogOwners" class="navA" href="dog-owners.html">Dog&nbsp;Owners</a>
+                        <br>
+                        <a id="catOwners" class="navA" href="cat-owners.html">Cat&nbsp;Owners</a>
+                        <br>
+                        <a id="fishOwners" class="navA" href="fish-owners.html">Fish&nbsp;Owners</a>
+                        <br>
+                        <a id="loginNav" class="navA" href="login.html">Login</a>                       
+                    </nav>
+                </div>
+            </button>
+        </header>
+            
+        <section>
+            <container id="docHeading">
+                <br>
+                <h1>Sources Cited</h1>
+                <p>All sources accessed May-June 2024</p>
+                <br>
+                <br>
+                    <h2>w3schools</h2>
+                        <cite id="coloradoSeal">
+                            W3schools.com. How To Create a Form With Multiple Steps. (n.d.). https://www.w3schools.com/howto/howto_js_form_steps.asp 
+                            </cite>
+                            <br>
+                        <cite>    
+                            W3schools.com. How To Create a Mobile Navigation Menu. (n.d.). https://www.w3schools.com/howto/howto_js_mobile_navbar.asp 
+                            </cite> 
+                            <br>
+                        <cite>
+                            W3schools.com. How TO JS Progress Bar. (n.d.). https://www.w3schools.com/howto/howto_js_progressbar.asp 
+                            </cite>    
+
+                    <h2>Github&nbsp;Gist&colon; User&nbsp;nodesocket</h2>
+                        <cite id="githubGist">
+                            262588213843476. (n.d.). All world timezones in an HTML select element. Gist. https://gist.github.com/nodesocket/3919205 
+                        </cite>
+                        
+
+                    <h2>GeeksforGeeks</h2>
+                        <cite id="geeksForGeeks">
+                            GeeksforGeeks. (2023, October 31). How to create a multi step progress bar in HTML CSS and Javascript? https://www.geeksforgeeks.org/how-to-create-a-multi-step-progress-bar-in-html-css-javascript/ 
+                        </cite>
+                        
+                    <h2>OnlineITtuts</h2>
+                    <cite id="onlineITtuts">
+                        Tutorials, O. (2023, October 30). Multi Step form with progress bar using HTML CSS & JavaScript. YouTube. https://www.youtube.com/watch?v=8tuxpCOAWQo 
+                    </cite>
+                    <br>
+
+                    <h2>Accessibility&nbsp;Checker</h2>
+                    <cite id="accessibilityChecker">
+                        Ada & WCAG compliance (Free Scan). Accessibility Checker. (2024, January 29). https://www.accessibilitychecker.org/ 
+                    </cite>
+                    <br>
+
+                    <h2>W3C&nbsp;Validation</h2>
+                    <cite id="w3c">
+                        Markup validation service. The W3C Markup Validation Service. (n.d.). https://validator.w3.org/#validate_by_uri 
+                    </cite>
+                    <br>
+
+                    <h2>HTML&nbsp;Punctuation</h2>
+                    <cite id="topTal">
+                        HTML punctuation symbols, entities and codes - toptal designers. HTML Arrows. (n.d.). https://www.toptal.com/designers/htmlarrows/punctuation/ 
+                    </cite>
+                    <br>
+
+                    <h2>WGU</h2>
+                    <cite id="wGU">
+                        Ashkin, P. (n.d.). User Interface Design. User interface design. https://wgulectures.github.io/wguresources/d279.html 
+                    </cite>
+                    <h2>Coloring&nbsp;for&nbsp;Colorblindness</h2>
+                    <cite id="colorBlind">
+                        Nichols, D. (n.d.). Coloring for colorblindness. David Nichols. https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40 
+                    </cite>
+                    <br>
+
+
+                    <footer>
+                        <ul class="thirdWidth">
+                            <br>
+                            <li><a href="sitemap.xml">Site&nbsp;Map</a></li>
+                            <li><a href="cite.html">Citations</a></li>
+                            <li><a href="cookie-policy.html">Cookie&nbsp;Policy</a></li>
+                        </ul>
+                        <ul class="thirdWidth">
+                            <br>
+                            <li><a href="cat-owners.html">Cat&nbsp;Owners</a></li>
+                            <li><a href="dog-owners.html">Dog&nbsp;Owners</a></li>
+                            <li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+            
+                        </ul>
+                        <!-- <div>
+                        <!-- Link to all page including all linked/cited APA7 citations is here
+                        Please feel welcome to view all references and citations at <a href="cite.html">this link</a> or by inspecting object properties throughout the page.
+                        <br>
+                        <!-- B.1 Link to external site is here and opens in a new tab
+                        <a href="phantasmagoriadesigns.com" id="phantDes" target="_blank">&#xa9; Phantasmagoria Designs, LLC</a>
+                        <br> 
+                        Website &#xa9; Jake Sturgill Hood, 2024
+                        </div> -->
+                        <img id="pPP" src="images/PPP.png" class="footerContent">
+                    </footer>
+                    <!-- Perform the following javascript code -->
+                    <script src="script.js"></script>
+                </body>
+                <!-- End document content -->
+            </html>
+
+
+
+
+https://www.w3schools.com/howto/howto_js_form_steps.asp
 
 
