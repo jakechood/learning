@@ -108,7 +108,8 @@
                         <span id="emailError" class="hidden">Emails must match</span>
                     
                     <div class="buttonBox">
-                        <progress max="2" value="1">Part&nbsp;1&nbsp;of&nbsp;2</progress>
+                        <label for="progress">Part&nbsp;1&nbsp;of&nbsp;2</label>
+                        <progress max="2" value="1" name="progress">Part&nbsp;1&nbsp;of&nbsp;2</progress>
                         <div style="overflow:auto;">
                             <div style="float:right;">
                               <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -174,6 +175,7 @@
                         </select>
                         
                         <div class="buttonBox">
+                            <label for="progress">Part&nbsp;2&nbsp;of&nbsp;2</label>
                             <progress max="2" value="2">Part&nbsp;2&nbsp;of&nbsp;2</progress>
                             <div style="overflow:auto;">
                                 <div style="float:right;">
