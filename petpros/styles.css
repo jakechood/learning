@@ -260,8 +260,37 @@ siteNav {
 /* Responsive Framework addendum */
 .row {
     width: 100%;
+    overflow: hidden;
 }
-
+.center {
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: hidden;
+}
+/* W3 multi-step form stylings */
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+ 
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
 /* Large Devices Only */
 @media (min-width: 1200px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
