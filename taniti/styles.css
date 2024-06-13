@@ -1,0 +1,442 @@
+/***** Master Variables *****/
+/* This section makes rebranding, visual updates,
+and color changes easier to occur without extensive 
+document parsing */
+
+:root {
+    /* Brand Colors */
+
+    /* Primary Brand Color: Midnight Blue */
+    --mainBrandColor: #003B6D;
+    /* Secondary Brand Color: Dim Gray */
+    --secondBrandColor: #676767;
+    /* Silver */
+    --whiteBrandColor: #BDBDBD;
+    /* Blue Sky */
+    --lightBrandColor: #6699CC;
+
+    /* Aqua
+    --accentBrandColor: #00B99A; */
+
+    /* Important = Red */
+    --importantColor: #FF0014; 
+    /* Links = Light Purple */
+    --linkColor: #FFFFFF;
+}
+
+/**** Base Styles ****/
+/* These are the styles that 
+we'll be using the most */
+/* All sections should hide overflow */
+section {
+    overflow: hidden;
+}
+/* This bracket affects every element */
+*{
+    /* box-sizing: border-box; */
+}
+/* First-Level Header text */
+h1 {
+    margin-bottom: 1rem;
+}
+/* TODO: Add header levels 2-4 */
+/* Fifth-level Header text*/
+h5 {
+    font-style: italic;
+    font-weight: 1600;
+    font-size: 30px;
+}
+/* Page header section */
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--whiteBrandColor);
+    background-color: var(--mainBrandColor);
+}
+/* Page Navigation Bar */
+nav a{
+    color: var(--whiteBrandColor)
+}   
+/* Footer Layout */
+.thirdWidth {
+    display: inline-block;
+    width: 33%;
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+/* What things should look like when they're selected on the page */
+select {
+    background-color: var(--secondBrandColor);
+    color: var(--whiteBrandColor);
+    font-size: 16px;
+    outline-color: var(--mainBrandColor);
+    scrollbar-highlight-color: var(--mainBrandColor);
+    user-select: none;
+    -webkit-user-select: none;
+}
+.logo {
+    max-width: 7%;
+}
+/* .floatRight {
+    display: inline;
+    float: right;
+}
+.floatLeft {
+    display: inline;
+    float: left;
+} */
+/* #consultationPhoto {
+    width: 30%;
+    float: center;
+    margin: 5rem;
+} */
+/* #mainAside {
+    margin-top: 12%;
+    margin-right: 10%;
+}
+#pPP {
+    float: right;
+} */
+#navButton{
+    background-color: var(--mainBrandColor);
+    border: none;
+}
+#dogsPhoto {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+/* Header Company Title */
+company {
+    font-size: xx-large;
+    padding-left: -2rem;
+}
+/* Searchbar */
+#search {
+    background-color: var(--secondBrandColor);
+    border-radius: 5px;
+}
+#consultationPhoto {
+    margin: auto;
+}
+/* Class for sections whose colors should align with the primary color palette */
+.headerColor {
+    background-color: var(--mainBrandColor);
+    color: var(--whiteBrandColor);
+}
+/* Class for sections whose background should be align with the secondary color palette */
+.secondBodyColor {
+    background-color: var(--whiteBrandColor);
+    color: var(--mainBrandColor);
+}
+.thirdBodyColor {
+    background-color: var(--lightBrandColor);
+    color: black;
+}
+footer {
+    overflow: hidden;
+    background-color: var(--secondBrandColor);
+    color: white;
+}
+
+.footerContent {
+    margin-top: 1rem;
+    float: right;
+    max-width: 30%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#servicesOffered {
+    list-style-position: inside;
+}
+/* Links should look like */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--linkColor);
+}
+/* Navigation menu popover */
+#myLinks:popover-open {
+    background-color: var(--mainBrandColor);
+    width: 100%;
+    height: 65%;
+    border-top: 5rem solid var(--secondBrandColor);
+    border-bottom: 5rem solid var(--secondBrandColor);
+}
+/* Navigation button */
+siteNav {
+    background-color: var(--mainBrandColor);
+}
+/* Navigation Menu "hamburger" icon */
+.icon{
+    color: var(--whiteBrandColor);
+    font-size: 2rem;
+    /* Maintain size & usability for mobile devices */
+    min-width: 34px;
+}
+/* Header item spacing */
+.headerItem {
+    padding: 1rem;
+}
+.headerItemL {
+    margin-right: 5%; 
+    align: left;
+}
+.headerItemInner {
+    margin-left: 5%;
+    margin-right: 5%;
+    float: center;
+    position: relative;
+}
+.headerItemR {
+    margin-left: 5%;
+    float: right;
+    padding-top: 2%;
+    position: relative;
+}
+#scheduleButton {
+    align-items: center;
+    justify-self: center;
+}
+.cTAButton {
+    align-items: center;
+    justify-self: center;
+}
+/* Borrowed nav template here from w3schools.org */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--whiteBrandColor);
+    color: white;
+  }
+  /* End borrowed template */
+/* Primary paragraphs should look like */
+#p1 {
+    background-color: var(--mainBrandColor);
+    width: 100%;
+    height: 150px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-family: Helvetica;
+    color: var(--secondBrandColor);
+}
+#emailError {
+    color: red;
+}
+.hidden {
+    display: none;
+}
+/* Responsive Framework addendum */
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+.center {
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: hidden;
+}
+/* W3 multi-step form stylings */
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+ 
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+/* W3 Breadcrumbs CSS */
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: var(--linkColor);
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: var(--secondBrandColor);
+    text-decoration: underline;
+  }
+/* Large Devices Only */
+@media (min-width: 1200px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: center;
+        border: 1pst solid var(--mainBrandColor);
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+} 
+
+/* Medium Devices Only */
+@media (min-width: 950px) and (max-width: 1199px)    {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+        border: 1pst solid var(--secondBrandColor);
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* Small Devices Only */
+@media (max-width: 941px)    {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: center;
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
