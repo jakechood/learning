@@ -147,6 +147,8 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    background-color: var(--mainBrandColor);
+    color: var(--whiteBrandColor);
 }
 .hamburger {
     display: none;
@@ -180,11 +182,6 @@ nav a {
     color: var(--lightBrandColor);
 }
 
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: var(--whiteBrandColor);
-}
 
 /* Class for sections whose colors should align with the primary color palette */
 .headerColor {
