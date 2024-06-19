@@ -31,22 +31,29 @@
             <!-- Searchbar -->
             <input id="search" class="w3-bar-item headerItem headerItemInner" type="text" placeholder="Search">
             <button class="w3-bar-item headerItem headerItemR" id="navButton" class="siteNav" type="button" for="siteNav">
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                <div id="myLinks" class="topnav">
-                    <nav id="siteNav">
-                    
-                        <a id="homePage" class="navA" href="index.html">Home</a>
+            
+                <div id="myLinks" class="topnav navbar">
+                    <nav id="siteNav" class="navbar">
+                        <!-- Original attempt "Hamburger menu" / "Bar icon" to toggle the navigation links
+                    <i href="javascript:void(0);" class="icon fa fa-bars" onclick="openMenu()">
+                    </i> -->
+                    <a href="#" class="nav-logo">WebDev.</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a id="homePage" class="navA" href="index.html">Home</a></li>
                         <br>
-                        <a id="dogOwners" class="navA" href="dog-owners.html">Dog&nbsp;Owners</a>
+                        <li class="nav-item"><a id="dogOwners" class="navA" href="dog-owners.html">Dog&nbsp;Owners</a></li>
                         <br>
-                        <a id="catOwners" class="navA" href="cat-owners.html">Cat&nbsp;Owners</a>
+                        <li class="nav-item"><a id="catOwners" class="navA" href="cat-owners.html">Cat&nbsp;Owners</a></li>
                         <br>
-                        <a id="fishOwners" class="navA" href="fish-owners.html">Fish&nbsp;Owners</a>
+                        <li class="nav-item"><a id="fishOwners" class="navA" href="fish-owners.html">Fish&nbsp;Owners</a></li>
                         <br>
-                        <a id="loginNav" class="navA" href="login.html">Login</a>                       
+                        <li class="nav-item"><a id="loginNav" class="navA" href="login.html">Login</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>                       
                     </nav>
                 </div>
             </button>
