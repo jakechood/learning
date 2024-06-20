@@ -20,36 +20,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function openMenu() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  };
+// function openMenu() {
+//     var x = document.getElementById("myLinks");
+//     if (x.style.display === "block") {
+//       x.style.display = "none";
+//     } else {
+//       x.style.display = "block";
+//     }
+//   };
 
-const popover = document.getElementById("myLinks");
-const toggleBtn = document.getElementById("navButton");
+// const popover = document.getElementById("myLinks");
+// const toggleBtn = document.getElementById("navButton");
 
-// Check for popover API support.
-function supportsPopover() {
-  return HTMLElement.prototype.hasOwnProperty("popover");
-}
+// // Check for popover API support.
+// function supportsPopover() {
+//   return HTMLElement.prototype.hasOwnProperty("popover");
+// }
 
-if (supportsPopover()) {
-  // Set the <div> element to be an auto popover
-  popover.popover = "auto";
-  // Set the button popover target to be the popover
-  toggleBtn.popoverTargetElement = popover;
+// if (supportsPopover()) {
+//   // Set the <div> element to be an auto popover
+//   popover.popover = "auto";
+//   // Set the button popover target to be the popover
+//   toggleBtn.popoverTargetElement = popover;
 
-  // Set that the button toggles popover visibility
-  toggleBtn.popoverTargetAction = "toggle";
-} else {
-  popover.textContent = "Popover API not supported.";
-  toggleBtn.hidden = true;
-}
+//   // Set that the button toggles popover visibility
+//   toggleBtn.popoverTargetAction = "toggle";
+// } else {
+//   popover.textContent = "Popover API not supported.";
+//   toggleBtn.hidden = true;
+// }
 
+// Contact form validation & display
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 

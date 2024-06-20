@@ -51,6 +51,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     color: var(--whiteBrandColor);
     background-color: var(--mainBrandColor);
+    justify-content: space-between;
 }
 /* Page Navigation Bar */
 nav a{
