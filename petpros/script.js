@@ -87,3 +87,14 @@ function nextPrev(n) {
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
+
+// New navbar functions
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
