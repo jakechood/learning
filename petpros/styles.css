@@ -132,7 +132,6 @@ company {
 
 html nav {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
 }
 
 nav li {
@@ -246,7 +245,7 @@ siteNav {
 }
 .headerItemL {
     margin-right: 5%; 
-    align: left;
+    box-align: left;
 }
 .headerItemInner {
     margin-left: 5%;
