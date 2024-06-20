@@ -76,7 +76,7 @@ select {
     -webkit-user-select: none;
 }
 .logo {
-    max-width: 7%;
+    max-width: 25%;
 }
 /* .floatRight {
     display: inline;
@@ -167,9 +167,9 @@ nav a {
     justify-content: space-between;
     align-items: center;
 }
-
+/* TODO: Fix header item spacing */
 .nav-item {
-    margin-left: 5rem;
+    justify-content: space-between;
 }
 
 .nav-link{

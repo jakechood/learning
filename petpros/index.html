@@ -18,21 +18,24 @@
     </head>
     <body>
         <!-- Page Header -->
-        <header class="headerColor w3-padding w3-bar header">
-            <img class="logo w3-bar-item headerItem nav-logo" 
+        <header class="headerColor w3-padding w3-bar header navbar">
+            <!-- TODO: Adjust header logo link appearance -->
+            <a href="index.html">
+                <img class="logo w3-bar-item nav-logo" 
                 src="images/PPPLogo.png" 
                 width="18%"
                 cite="cite.html#PPP"
-                href="index.html"
                 alt="Paradigm Pet Professionals Logo: A vector splash image of a nondescript four-legged animal surrounded by an incomplete circular paintbrush stroke">
-            <company class="w3-bar-item headerItem headerItemL" href="index.html">Paradigm&nbsp;Pet&nbsp;Professionals</company>
+            </a>
+            <company class="w3-bar-item nav-item"><a href="index.html">Paradigm&nbsp;Pet&nbsp;Professionals</a></company>
             <!-- Call to action button -->
-            <a href="index.html#pageForm"><button class="w3-bar-item headerItem headerItemInner" type="button" href="index.html#pageForm">Contact&nbsp;Us</button></a>
+            <a href="index.html#pageForm"><button class="w3-bar-item nav-item" type="button" href="index.html#pageForm">Contact&nbsp;Us</button></a>
             <!-- Searchbar -->
-            <input id="search" class="w3-bar-item headerItem headerItemInner" type="text" placeholder="Search">
-            <button class="w3-bar-item headerItem headerItemR" id="navButton" class="siteNav" type="button" for="siteNav">
-            
-                <div id="myLinks" class="topnav">
+            <input id="search" class="w3-bar-item nav-item" type="text" placeholder="Search">
+            <!-- Original nav menu button -->
+            <!-- <button class="w3-bar-item nav-item" id="navButton nav-item" class="siteNav" type="button" for="siteNav">
+             -->
+                <div id="myLinks" class="topnav navbar">
                     <nav id="siteNav" class="navbar">
                         <!-- Original attempt "Hamburger menu" / "Bar icon" to toggle the navigation links
                     <i href="javascript:void(0);" class="icon fa fa-bars" onclick="openMenu()">
