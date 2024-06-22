@@ -1,6 +1,6 @@
 /***** Master Variables *****/
 /* This section makes rebranding, visual updates,
-and color changes easier to occur without extensive 
+and color changes easier to impplement without extensive 
 document parsing */
 
 :root {
@@ -59,13 +59,12 @@ inlineContainer {
 }
 /* Page Navigation Bar */
 nav a{
-    color: var(--whiteBrandColor)
+    color: var(--whiteBrandColor);
 }   
-/* Footer Layout */
+/* Footer Three-Column Layout */
 .thirdWidth {
     display: inline-block;
     width: 33%;
-    list-style-type: none;
     margin-top: 1rem;
     margin-left: 1rem;
 }
@@ -176,6 +175,7 @@ nav a {
 /* TODO: Fix header item spacing */
 .nav-item {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-link{
