@@ -53,6 +53,10 @@ header {
     background-color: var(--mainBrandColor);
     justify-content: space-between;
 }
+/* Inline Container */
+inlineContainer {
+    display: inline-flex;
+}
 /* Page Navigation Bar */
 nav a{
     color: var(--whiteBrandColor)
@@ -76,7 +80,9 @@ select {
     -webkit-user-select: none;
 }
 .logo {
-    max-width: 25%;
+    margin: 1rem;
+    max-width: 20%;
+    margin-right: -10%;
 }
 /* .floatRight {
     display: inline;
@@ -309,8 +315,7 @@ siteNav {
     background-color: var(--mainBrandColor);
     width: 100%;
     height: 150px;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin: 2rem;
     font-family: Helvetica;
     color: var(--secondBrandColor);
 }
